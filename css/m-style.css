@@ -1,0 +1,192 @@
+@media screen and (max-width:768px)
+{
+
+    /* header */
+    #header { padding:10px 0 0; z-index: 6;}
+      
+    #header .center { 
+        display: flex; justify-content:space-between; align-items: center; 
+        width:100%; padding:0 2%;
+    }
+    .logo, .oled-logo, .ham  {width:33.333333%; display: flex;}
+    
+    .logo { justify-content: flex-start; padding-top: 10px;}
+    .logo a { padding-top:0px;}
+    .logo a img  { width:85%;}
+    .oled-logo{justify-content: center;}
+    .oled-logo a img  {width:85%;}
+    .oled-logo a span {margin:0 5px; font-size: 23px;}
+    .ham {justify-content: end;}
+    .ham .fas {color:#fff; font-size: 30px; }
+
+    /* cont1 */
+
+    .cont1 {position: relative;  }
+    .cont1box {
+    background-image: url(../img/bg_kv_2.jpg); 
+    background-repeat: no-repeat; background-size: cover; 
+    height:70vh; display:flex; align-items:center;    
+    animation: bg 7s linear infinite;
+    animation-direction:alternate;
+    backface-visibility: hidden;
+    transform: scale(1.1);
+    background-size: cover;
+    background-position: center top;
+    width:100%;
+    position: absolute;
+    top:0; left:0;
+    z-index: 0;
+    }
+    .cont1box-text { 
+    position: absolute;
+    width:98%; text-align: center;
+    top:150px; left:50%; transform: translateX(-50%);
+    z-index: 1;
+    }
+    .cont1box-text h2 {
+    font-size: 40px; color:#fff; 
+    margin-bottom: 35px;}
+    .cont1box-text p {
+    line-height: 32px;font-size: 22px; color:#fff; margin-bottom: 20px;
+    }
+
+    .cont1box-text .btn {
+    width:45%; height:60px; background-color: #0a440c; 
+    border:none; color:#fff; font-size: 20px; line-height: 60px;
+    transition: all 0.5s;}
+
+    /* cont2 */
+
+    .cont2 {
+        width:100%; 
+        padding-top:90vh;
+        padding-bottom: 0px;
+        z-index: 2; background-color: #000;
+        color:#fff;
+    }
+    .cont2 .center { 
+        width:98%; display: flex; flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cont2-box {width:100%; }
+    .cont2-box h2 {
+        text-align: center;
+        font-size: 40px; color:#fff; 
+        line-height: 50px;
+    }
+    .cont2-box1 {
+        width:47%; margin:50px 1.5% 20px;
+        padding-top:20px;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        position: relative;
+        overflow: hidden;
+    
+    }
+
+    /*cont3*/
+    .cont3 {background-color: #000;}
+    .cont3 .center {width:98%; padding:100px 0;}
+    .cont3 .center .cont3-about {
+    color:#fff; text-align: center;
+
+    }
+    .cont3-about h2 {
+    font-size: 40px; color:#fff; 
+    margin-bottom: 55px;}
+    .cont3-about .about-text {
+    line-height: 35px;font-size: 22px; color:#fff; margin-bottom: 100px;
+    }
+
+    .cont3 .center .cont3-detail {display: flex; flex-wrap: wrap;}
+    .cont3-box-wrap { 
+    width:47%; margin:0 1.5% 2%; position:relative;
+    overflow: hidden; background-color: #000;
+    border: 1px solid #fff; border-radius: 30px;
+    height:300px;
+    }
+
+
+    /* cont4 */
+    
+    .cont4 .center { width:100%; padding:100px 2%; margin:0 auto;}
+    .cont4 .center h2 {color:#fff; font-size: 40px; padding-top:100px; margin-bottom: 60px; line-height: 55px; text-align: center;}
+    .cont4 .center h4 {color:#fff; font-size: 18px; text-align: center; line-height: 32px;}
+
+
+    /* cont5 */
+    .cont5 .center {width:95%; padding: 0 2%; display: flex; flex-direction: column; align-items: center; padding:100px 0;}
+    .cont5 .center h2 {color:#fff; font-size: 40px; margin-bottom: 60px; text-align: center;}
+    .cont5 .center h4 {color:#fff; font-size: 18px; text-align: center; line-height: 32px;}  
+
+
+    /* footer */
+    #footer .center p {font-size: 15px;}
+}
+
+@media screen and (max-width:480px){
+
+    /* header */
+    #header { height:60px; padding:15px 0 10px;}     
+    .logo {display: none; position: absolute; left:-99999px;}
+    .logo, .oled-logo, .ham  {width:0%; display: flex;}
+    .oled-logo, .ham  {width:50%; display: flex; justify-content: space-between;}
+    .ham {justify-content:flex-end; padding-right: 5px;}
+
+
+    /* cont1 */
+    .cont1box-text h2 {
+        font-size: 30px; color:#fff; 
+        margin-bottom: 35px; line-height: 40px;}
+      .cont1box-text p {
+        line-height: 27px;font-size: 18px; color:#fff; margin-bottom: 20px;
+      }
+      
+      .cont1box-text .btn {display: none;}
+
+    /* cont2 */
+    .cont2-box h2 {
+        text-align: center;
+        font-size: 30px; color:#fff; line-height: 40px;
+    }
+    .cont2-box1 {width:90%; margin:50px 5% 10px;}
+
+    /* cont3 */
+    .cont3-about h2 {font-size: 30px; color:#fff; line-height: 40px;}
+    .cont3-about .about-text {
+        line-height: 27px;font-size: 18px; color:#fff; margin-bottom: 20px}
+
+    .cont3-box-wrap { 
+        width:90%; margin:0 5% 5%; position:relative;
+        overflow: hidden; background-color: #000;
+        border: 1px solid #fff; border-radius: 30px;
+        height:300px;
+        }
+
+    /* cont4 */
+
+    .cont4 .center { width:100%; padding:100px 2%; margin:0 auto;}
+    .cont4 .center h2 {color:#fff; font-size: 40px; padding-top:50px; margin-bottom: 60px; line-height: 55px; text-align: center;}
+    .cont4 .center h4 {color:#fff; font-size: 18px; text-align: center; line-height: 32px;}
+
+
+    /* cont5 */
+    .cont5 .center {width:95%; padding: 0 2%; display: flex; flex-direction: column; align-items: center; line-height: 55px; padding:50px 0;}
+    .cont5 .center h2 {color:#fff; font-size: 40px; margin-bottom: 60px; text-align: center;}
+    .cont5 .center h4 {color:#fff; font-size: 18px; text-align: center; line-height: 32px;}
+    .cont5-text { 
+        position: absolute; width:500px; 
+        bottom:-5%; left:50%; transform: translateX(-50%);
+        text-align: center;
+      }  
+
+
+    /* footer */
+    #footer .center { width:95%;}
+    #footer .center p {font-size: 12px;}    
+        
+
+
+
+}
+
